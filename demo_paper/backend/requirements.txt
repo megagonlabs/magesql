@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+openai
+pydantic
+nltk
+pydantic
+requests
+tiktoken
+sqlparse
+tqdm
+records
+babel
+torch
+transformers
+pandas

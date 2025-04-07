@@ -1,0 +1,178 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+}
+
+.left-panel {
+  flex: 0 0 20%;
+  /* width: 25%; */
+  border-right: 1px solid #dcdcdc; /* Adds a light border line */
+  background-color: #f5f5f5; /* Light grey background */
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.main-and-button-area {
+  flex-grow: 1;
+  padding: 20px; /* Ensure there's some space around the main content */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+}
+
+/* Style for the tabs container if necessary */
+.tabs-container {
+  padding: 20px;
+  flex: 1; /* Allow tabs to fill the space above the buttons */
+  border-bottom: 2px solid #dcdcdc; /* Light grey border */
+  max-height: 750px;
+  overflow-y: auto;
+}
+
+.tab-content {
+  /* height: calc(100vh - 120px); */
+  border-top: 2px solid #dcdcdc; /* Light grey border */
+  padding: 10px;
+  overflow-y: auto; /* Add scrollbars if the content overflows */
+}
+
+.agent-tab-container {
+  display: flex;
+  height: 100%;
+  /* gap: 20px; */
+}
+
+.button-area {
+  /* border-top: 1px solid #dcdcdc; Adds a light border line */
+  padding: 10px 20px; /* Adjust padding as needed */
+  /* background-color: #f5f5f5; Light grey background, adjust as needed */
+  display: flex;
+  justify-content: start; /* Align buttons to the start of the flex container */
+  gap: 30px; /* Add space between buttons */
+  height: 20%;
+  max-height: 50px; /* Adjust the max height as needed */
+}
+
+/* Additional styles for button appearance */
+/* .button-area .bp3-button {
+  margin-right: 0px;
+} */
+
+/* Adjust the last button to remove the extra margin on the right */
+/* .button-area .bp3-button:last-child {
+  margin-right: 0;
+} */
+
+/* Connection form styles */
+.connection-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.connection-form h3 {
+  margin-bottom: 10px;
+}
+
+.connection-form .bp3-form-group {
+  margin-bottom: 10px;
+}
+
+.label {
+  display: inline-block;
+  min-width: 80px; /* Adjust this value to suit your layout */
+}
+
+.connection-actions {
+  display: flex;
+  align-items: center;
+}
+
+.connection-actions .connection-button {
+  margin-right: 10px;
+  background-color: #106ba3; /* Blueprint primary color, change as needed */
+  color: white;
+}
+
+.connection-status {
+  margin-left: 10px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  background-color: transparent; /* Removes background color */
+}
+
+.connected {
+  color: green;
+}
+
+.disconnected {
+  color: red;
+}
+
+.connecting {
+  color: grey;
+}
+
+.agents-cards {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap; /* Allows cards to wrap to the next line if the container is full */
+  gap: 10px; /* Adjust the gap between cards as necessary */
+}
+
+.agents-cards .bp3-card {
+  flex: 1; /* Cards will grow to fill the space */
+  min-width: 150px; /* Minimum width for each card */
+  max-width: calc(25% - 10px); /* Adjust the width percentages and gap accordingly */
+}
+
+.left-panel-divider {
+  width: auto;
+  height:1px;
+  margin: 12px 0; 
+}

@@ -1,0 +1,10 @@
+.settings-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.settings-card {
+    flex: 1;
+    margin: 5px;
+}

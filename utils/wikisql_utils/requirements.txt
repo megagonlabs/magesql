@@ -1,0 +1,5 @@
+tqdm
+sqlalchemy==1.2
+records==0.5.3
+babel==2.5.1
+tabulate==0.8.1
