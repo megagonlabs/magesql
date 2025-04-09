@@ -4,21 +4,21 @@
 Here is a overivew of the repository's structure related to the demo.
 
 ```
-└── agents                                  # Classes of agents
-    ├── base_agent.py                       # Abstract agent class
-    └── <agent>.py                          # Implementation class of agent
+├── agents                                  # Classes of agents
+│   ├── base_agent.py                       # Abstract agent class
+│   └── <agent>.py                          # Implementation class of agent
 ├── database_routing                        # training scripts for database routing
 ├── dataset_classes                         # Classes for datasets
 ├── demonstration_selector                  # Classes for demonstration selectors
 ├── demo_paper                              # Code for the frontend and backend
-    ├── backend                             # Code for the backend
-        ├── agent_center.py                 # Manage & handle agents
-        ├──gold_sql_retrieval.py            # LM Embedding based gold sql retrieval
-        ├── main.py                         # FastAPI backend 
-        └── requirements.txt                # Python packages for the backend
-    ├── public                              # npm resources
-    ├── src                                 # source code for the frontend
-    └── packages.json                       # npm packages.
+│   ├── backend                             # Code for the backend
+│   │   ├── agent_center.py                 # Manage & handle agents
+│   │   ├── gold_sql_retrieval.py          # LM Embedding based gold sql retrieval
+│   │   ├── main.py                         # FastAPI backend 
+│   │   └── requirements.txt                # Python packages for the backend
+│   ├── public                              # npm resources
+│   ├── src                                 # source code for the frontend
+│   └── packages.json                       # npm packages.
 ├── utils                                   # Utility functions
 └── README.md                               # The file you are reading now.
 ```
