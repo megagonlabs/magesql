@@ -4,32 +4,31 @@
 Here is a overivew of the repository's structure related to the demo.
 
 ```
-└── agents                                  # Classes of agents
-    ├── base_agent.py                       # Abstract agent class
-    └── <agent>.py                          # Implementation class of agent
+├── agents                                  # Classes of agents
+│   ├── base_agent.py                       # Abstract agent class
+│   └── <agent>.py                          # Implementation class of agent
 ├── database_routing                        # training scripts for database routing
 ├── dataset_classes                         # Classes for datasets
 ├── demonstration_selector                  # Classes for demonstration selectors
 ├── demo_paper                              # Code for the frontend and backend
-    └── backend                             # Code for the backend
-        ├── agent_center.py                 # Manage & handle agents
-        ├──gold_sql_retrieval.py            # LM Embedding based gold sql retrieval
-        ├── main.py                         # FastAPI backend 
-        └── requirements.txt                # Python packages for the backend
-    ├── public                              # npm resources
-    ├── src                                 # source code for the frontend
-    ├── packages.json                       # npm packages
-    └── README.md                           # The file you are reading now.
+│   ├── backend                             # Code for the backend
+│   │   ├── agent_center.py                 # Manage & handle agents
+│   │   ├── gold_sql_retrieval.py          # LM Embedding based gold sql retrieval
+│   │   ├── main.py                         # FastAPI backend 
+│   │   └── requirements.txt                # Python packages for the backend
+│   ├── public                              # npm resources
+│   ├── src                                 # source code for the frontend
+│   └── packages.json                       # npm packages.
 ├── utils                                   # Utility functions
 └── README.md                               # The file you are reading now.
 ```
 
 ### Clone the demo_paper branch of this repo
 ```sh
-git clone https://github.com/rit-git/text2sql-workplace.git
-cd text2sql-workplace
-git checkout -b demo_paper
-git pull origin demo_paper
+git clone https://github.com/megagonlabs/magesql.git
+cd magesql
+git checkout -b main
+git pull origin main
 ```
 
 ###  Environment setup (Backend)
@@ -106,7 +105,7 @@ cp <your_downloaded_files_directory>/question_embeddings.pt .
 Download the trained database routing model from [Megagon Shared Drive](https://drive.google.com/drive/folders/1O4SWrA-W0ZxmRKtl5u8PfjWcd3vOCNfA), move the downloaded file `database_routing_spider_v1.zip` to directory `<repo_path>/database_routing/saved_models/` and unzip it.
 ```sh
 cd <repo_path>/
-mkdir database_routing/saved_models/
+mkdir -p database_routing/saved_models/
 cp <your_downloaded_files_directory>/database_routing_spider_v1.zip .
 unzip database_routing_spider_v1.zip
 ```

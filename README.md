@@ -105,7 +105,7 @@ cp <your_downloaded_files_directory>/question_embeddings.pt .
 Download the trained database routing model from [Megagon Shared Drive](https://drive.google.com/drive/folders/1O4SWrA-W0ZxmRKtl5u8PfjWcd3vOCNfA), move the downloaded file `database_routing_spider_v1.zip` to directory `<repo_path>/database_routing/saved_models/` and unzip it.
 ```sh
 cd <repo_path>/
-mkdir database_routing/saved_models/
+mkdir -p database_routing/saved_models/
 cp <your_downloaded_files_directory>/database_routing_spider_v1.zip .
 unzip database_routing_spider_v1.zip
 ```
