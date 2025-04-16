@@ -87,14 +87,14 @@ cp -r test_database/* database_all_splits/
 ```
 
 3. Schema Fetching agent
-Download the schema file from [Megagon Shared Drive](https://drive.google.com/drive/folders/1O4SWrA-W0ZxmRKtl5u8PfjWcd3vOCNfA), and move it to directory `<repo_path>/datasets/spider/`
+Download the schema file from [Megagon Shared Drive](https://drive.google.com/file/d/1TgJR6NpyQiuvmrpUaHHf0dZMy4kfDobS/view?usp=drive_link), and move it to directory `<repo_path>/datasets/spider/`
 ```sh
 cd <repo_path>/datasets/spider # skip this step if you are already in the spider folder
 cp <your_downloaded_files_directory>/db_id2schema_text.json .
 ```
 
 4. Gold SQL Retrieval
-Download the gold SQL file from [Megagon Shared Drive](https://drive.google.com/file/d/1ttWWVa-8xHq1V9Ec2Y2ndCmuNzFgNoff) and question embedding file from [Megagon Shared Drive](https://drive.google.com/drive/folders/1O4SWrA-W0ZxmRKtl5u8PfjWcd3vOCNfA), and move it to directory `<repo_path>/datasets/spider/`
+Download the gold SQL file from [Megagon Shared Drive](https://drive.google.com/file/d/1ttWWVa-8xHq1V9Ec2Y2ndCmuNzFgNoff) and question embedding file from [Megagon Shared Drive](https://drive.google.com/file/d/1TgJR6NpyQiuvmrpUaHHf0dZMy4kfDobS/view?usp=drive_link), and move it to directory `<repo_path>/datasets/spider/`
 ```sh
 cd <repo_path>/datasets/spider # skip this step if you are already in the spider folder
 cp <your_downloaded_files_directory>/question2sql.json .
